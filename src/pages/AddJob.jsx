@@ -15,9 +15,7 @@ const AddJob = () => {
             <h2 className="text-3xl text-center font-semibold mb-6">Add Job</h2>
 
             <div className="mb-4">
-              <label htmlFor="title" className="block text-gray-700 font-bold mb-2"
-                >Job Type</label
-              >
+              <label htmlFor="title" className="block text-gray-700 font-bold mb-2">Job Type</label>
               <select
                 id="type"
                 name="type"
