@@ -19,7 +19,7 @@ const JobPage = () => {
   return (
     <main>
       <section>
-        <div className="container m-auto py-6 px-6">
+        <div className="container m-auto py-6 px-6 ">
           <NavLink to="/jobs" className="text-indigo-500 hover:text-indigo-600 flex items-center" >
             <BsArrowLeft className='mr-2'/> Back to Job Listings 
           </NavLink>
@@ -27,9 +27,9 @@ const JobPage = () => {
       </section>
 
     <section className="bg-indigo-50">
-      <div className="container m-auto py-10 px-6">
+      <div className="container m-auto py-10 px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
-          <main>
+          <main className=''>
             <div
               className="bg-white p-6 rounded-lg shadow-md text-center md:text-left"
             >
@@ -78,11 +78,14 @@ const JobPage = () => {
             </div>
 
             {/* <!-- Manage --> */}
-            <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-              <h3 className="text-xl font-bold mb-6">Manage Job</h3>
-              <NavLink to={`jobs/edit/${id}`} className="bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block" >Edit Job</NavLink>
+            <div className="bg-white p-6 rounded-lg shadow-md mt-6  mx-auto">
+              <h3 className="text-xl font-bold mb-6 text-center">Manage Job</h3>
+                <p className='flex flex-grow-1 gap-8 mx-auto justify-center'>
+              <NavLink to={`jobs/edit/${id}`} className="bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-1/4 focus:outline-none focus:shadow-outline mt-4 block" >Edit Job</NavLink>
 
-              <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"  > Delete Job </button>
+              <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-1/4 focus:outline-none focus:shadow-outline mt-4 block"  > Delete Job </button>
+
+                </p>
             </div>
           </aside>
         </div>

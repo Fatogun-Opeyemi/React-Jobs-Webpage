@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react"
+// import { Analytics } from "@vercel/analytics/react"
 // import ErrorElement from "./components/ErrorElement"
 import ErrorPage from "./pages/ErrorPage"
 import MainLayout from "./Layout/MainLayout"
@@ -15,7 +15,7 @@ const router = createBrowserRouter(
       <Route index element={<PageForHome/>} />
       <Route path="/jobs" element={<JobsPage/>} />
       <Route path="/jobs/:id" element={<JobPage/>} loader={getEachJob} />
-      <Analytics/>
+      {/* <Analytics/> */}
       <Route path="/add-jobs" element={<AddJob/>} />
       <Route path="*" element={<ErrorPage/>} />
     </Route>
